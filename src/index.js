@@ -10,6 +10,8 @@ function Booklist() {
      <Book />
      <Book />
      <Book />
+     <Book />
+     <Book />
     </section>
   )
 };
@@ -18,18 +20,15 @@ function Booklist() {
 const Book = () => {
   return (
     <article className="book">
-      <Image></Image>
-      <Title />
-      <Author />
+      <img 
+        src="https://m.media-amazon.com/images/I/71gk+H+yEkL._AC_UY218_.jpg" alt="Peril Book" 
+      />
+      <h1>Peril</h1>
+      <h4>Bob Woodward</h4>
     </article>
   )
 };
 
-// Book components Image, Title, Author
-const Image = () => <img src="https://m.media-amazon.com/images/I/71gk+H+yEkL._AC_UY218_.jpg" alt="Peril Book" />
 
-const Title = () => <h1>Peril</h1>;
-
-const Author = () => <h2>Bob Woodward</h2>;
 
 ReactDom.render(<Booklist />, document.getElementById('root'));
