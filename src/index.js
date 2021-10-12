@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDom from 'react-dom';
+import './index.css'; 
 
 
 // Function Booklist - holds instances of each Book 
 function Booklist() {
   return (
-    <section> 
+    <section className='booklist'> 
      <Book />
      <Book />
      <Book />
@@ -16,7 +17,7 @@ function Booklist() {
 // Book arrow function
 const Book = () => {
   return (
-    <article>
+    <article className="book">
       <Image></Image>
       <Title />
       <Author />
@@ -25,7 +26,7 @@ const Book = () => {
 };
 
 // Book components Image, Title, Author
-const Image = () => <img src="https://m.media-amazon.com/images/I/71gk+H+yEkL._AC_UY218_.jpg" alt="" />
+const Image = () => <img src="https://m.media-amazon.com/images/I/71gk+H+yEkL._AC_UY218_.jpg" alt="Peril Book" />
 
 const Title = () => <h1>Peril</h1>;
 
