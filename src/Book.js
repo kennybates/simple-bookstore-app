@@ -1,10 +1,10 @@
 import React from 'react';
 
 // Book function
-const Book = ({ img, title, author}) => {
+const Book = ({ img, title, author, description}) => {
     //const { img, title, author } = props; // destructuring book objects
     const clickHandler = () => {
-      alert('Description of book');
+      alert(description);
     };
     return (
       <article className="book">
